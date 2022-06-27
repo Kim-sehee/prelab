@@ -73,4 +73,4 @@ $ kubectl config current-context
 
   - fork한 4개의 마이크로서비스 git 저장소에 있는 buildspec.yml을 각 마이크로서비스 이름에 맞게 수정한다.
   - buildspec.yml의 10라인에 있는 버전을 corretto11로 수정한다.
-![image](https://github.com/Kim-sehee/prelab/blob/389926d47ef750eed5660ec3a695ce616663c3bc/ecr.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/2d62e71dbf94a9bf70e204165340a489be5203ec/buildspec_11.JPG)

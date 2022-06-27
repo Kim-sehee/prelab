@@ -84,7 +84,7 @@ $ kubectl config current-context
 
   - KUBE URL 설정은 다음과 같다.
   - 클러스터 메뉴에서 API 서버 엔드포인트 URL을 copy한다.
-![image]
+![image]https://github.com/Kim-sehee/prelab/blob/main/servicerole.JPG
 
   - KUBE TOKEN은 다음에서 얻을 수 있다.
 ```

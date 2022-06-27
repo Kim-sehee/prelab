@@ -1,2 +1,2 @@
 # prelab
-![image]
+![image]캡처.JPG

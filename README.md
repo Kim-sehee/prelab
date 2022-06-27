@@ -116,6 +116,23 @@ $ kubectl -n kube-system describe secret eks-admin
  - 설정을 완료하면 최종적으로 아래와 같이 된다.
 ![image](https://github.com/Kim-sehee/prelab/blob/main/kube_token.JPG)
 
-  - 접속 권한을 위해 아래 인라인 정책 추가를 수행한다.
+  - 인라인 정책 추가를 위해 아래의 환경에서 서비스 역할 링크로 이동한다.
 ![image](https://github.com/Kim-sehee/prelab/blob/main/servicerole.JPG)
+
+  - 인라인 정책 권한을 추가하여 JSON에 해당 구문을 삽입한다.
+![image](https://github.com/Kim-sehee/prelab/blob/6a747cb1bc6ce1a5fd79e796f26fa186c75bd66e/policysetting.JPG)
+```
+{
+      "Action": [
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:CompleteLayerUpload",
+        "ecr:GetAuthorizationToken",
+        "ecr:InitiateLayerUpload",
+        "ecr:PutImage",
+        "ecr:UploadLayerPart"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+ }
+```
 

@@ -60,3 +60,4 @@ $ kubectl config current-context
  ```
  aws ecr list-images --repository-name user12
  ```
+![image](https://github.com/Kim-sehee/prelab/blob/389926d47ef750eed5660ec3a695ce616663c3bc/ecr.JPG)

@@ -136,4 +136,7 @@ $ kubectl -n kube-system describe secret eks-admin
  }
 ```
   - 4개의 마이크로 서비스에 대한 프로젝트 빌드를 시작한다.
-![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build5.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/orderbuild.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/productbuild.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/gatewaybuild.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/deliverybuild.JPG)

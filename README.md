@@ -16,3 +16,13 @@ Default region name [None]:
 Default output format [None]:
 ```
 - 참고로, Default output format은 json 구문을 넣어주어야한다.
+
+- IAM 설정 확인은 아래 명령어를 수행한다.
+```
+aws iam list-account-aliases
+```
+
+- IAM 클러스터를 생성한다.
+```
+eksctl create cluster --name user12-eks --version 1.21 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 3
+```

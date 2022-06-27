@@ -74,3 +74,6 @@ $ kubectl config current-context
   - fork한 4개의 마이크로서비스 git 저장소에 있는 buildspec.yml을 각 마이크로서비스 이름에 맞게 수정한다.
   - buildspec.yml의 10라인에 있는 버전을 corretto11로 수정한다.
 ![image](https://github.com/Kim-sehee/prelab/blob/2d62e71dbf94a9bf70e204165340a489be5203ec/buildspec_11.JPG)
+
+  - AWS console에서 codebuild메뉴의 프로젝트 빌드에서 빌드 프로젝트 생성을 클릭하여 4개의 마이크로서비스 프로젝트를 빌드한다.
+![image](https://github.com/Kim-sehee/prelab/blob/2d62e71dbf94a9bf70e204165340a489be5203ec/buildspec_11.JPG)  

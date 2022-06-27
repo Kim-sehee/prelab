@@ -36,3 +36,23 @@ $ aws eks --region ap-northeast-1 update-kubeconfig --name user12-eks
 ```
 $ kubectl config current-context
 ```
+
+  - 컨테이너 레지스트리(ECR)을 마이크로 서비스 개수만큼 생성한다.
+ ```
+ $ aws ecr create-repository \
+    --repository-name user12-gateway  \
+    --image-scanning-configuration scanOnPush=true \
+    --region ap-northeast-1
+ $ aws ecr create-repository \
+    --repository-name user12-order  \
+    --image-scanning-configuration scanOnPush=true \
+    --region ap-northeast-1
+ $ aws ecr create-repository \
+    --repository-name user12-delivery  \
+    --image-scanning-configuration scanOnPush=true \
+    --region ap-northeast-1
+ $ aws ecr create-repository \
+    --repository-name user12-product  \
+    --image-scanning-configuration scanOnPush=true \
+    --region ap-northeast-1
+ ```

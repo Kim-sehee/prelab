@@ -113,4 +113,9 @@ EOF
 
 $ kubectl -n kube-system describe secret eks-admin
 ```
+ - 설정을 완료하면 최종적으로 아래와 같이 된다.
 ![image](https://github.com/Kim-sehee/prelab/blob/main/kube_token.JPG)
+
+  - 접속 권한을 위해 아래 인라인 정책 추가를 수행한다.
+![image](https://github.com/Kim-sehee/prelab/blob/main/servicerole.JPG)
+

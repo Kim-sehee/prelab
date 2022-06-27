@@ -146,3 +146,23 @@ $ kubectl -n kube-system describe secret eks-admin
 ```
 $ kubectl get service
 ```
+  - 배포된 마이크로서비스를 테스트하기 전, 통합 메시징 인프라(Kafka)가 설치되어야 한다.
+  - 설치 방법은 아래와 같이 수행한다
+  - Kafka 설치
+```
+$ helm repo update
+$ helm repo add bitnami https://charts.bitnami.com/bitnami
+$ kubectl create ns kafka
+$ helm install my-kafka bitnami/kafka --namespace kafka
+```
+  - Kafka Monitor 설치
+```
+helm repo add kafka-ui https://provectus.github.io/kafka-ui
+helm repo update
+helm install kafka-ui kafka-ui/kafka-ui  --namespace=kafka \
+--set envs.config.KAFKA_CLUSTERS_0_NAME=shop-Kafka \
+--set envs.config.KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=my-kafka:9092 \
+--set envs.config.KAFKA_CLUSTERS_0_ZOOKEEPER=my-kafka-zookeeper:2181
+```
+
+![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/deliverybuild.JPG)

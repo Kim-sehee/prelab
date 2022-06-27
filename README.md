@@ -140,3 +140,9 @@ $ kubectl -n kube-system describe secret eks-admin
 ![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/productbuild.JPG)
 ![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/gatewaybuild.JPG)
 ![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/deliverybuild.JPG)
+
+- **마이크로서비스 테스팅**
+  - 테스트를 수행하기 전에 배포된 Gateway가 라우팅할 마이크로서비스의 Endpoint를 확인한다.
+```
+$ kubectl get service
+```

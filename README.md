@@ -62,7 +62,7 @@ $ kubectl config current-context
  ```
 ![image](https://github.com/Kim-sehee/prelab/blob/389926d47ef750eed5660ec3a695ce616663c3bc/ecr.JPG)
 
-### PreLab 2일차 산출물 ###
+### PreLab 2-3일차 산출물 ###
 
 - **코드빌드 및 프로비저닝**
   - 빌드를 시작하기에 앞서, 4개의 마이크로서비스 git 주소를 fork하는 작업을 수행한다.
@@ -81,3 +81,35 @@ $ kubectl config current-context
 ![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build3.JPG)
 ![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build4.JPG)
 ![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build5.JPG)
+
+  - KUBE URL 설정은 다음과 같다.
+  - 클러스터 메뉴에서 API 서버 엔드포인트 URL을 copy한다.
+![image]
+
+  - KUBE TOKEN은 다음에서 얻을 수 있다.
+```
+$ cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: eks-admin
+  namespace: kube-system
+EOF
+
+$ cat <<EOF | kubectl apply -f -
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: eks-admin
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: eks-admin
+  namespace: kube-system
+EOF
+
+$ kubectl -n kube-system describe secret eks-admin
+```

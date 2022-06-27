@@ -1,5 +1,4 @@
 # prelab
-![image](https://github.com/Kim-sehee/prelab/blob/cf47fa3ddf98742cc043557da54978ee993e7200/accesskey_setting.JPG)
 
 ### PreLab 1일차 산출물 ###
 
@@ -55,4 +54,9 @@ $ kubectl config current-context
     --repository-name user12-product  \
     --image-scanning-configuration scanOnPush=true \
     --region ap-northeast-1
+ ```
+ 
+  - 생성 완료 후 아래 명령어로 확인하면 다음과 같이 생성한 것을 확인할 수 있다
+ ```
+ aws ecr list-images --repository-name user12
  ```

@@ -77,7 +77,7 @@ $ kubectl config current-context
 
   - AWS console에서 codebuild메뉴의 프로젝트 빌드에서 빌드 프로젝트 생성을 클릭하여 4개의 마이크로서비스 프로젝트를 빌드한다.
 ![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build1.JPG)
-![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build1.JPG)
-![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build1.JPG)
-![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build1.JPG)
-![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build1.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build2.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build3.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build4.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/ea4e564a085150813c4c2a99f6ab1cd10682da23/build5.JPG)

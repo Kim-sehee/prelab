@@ -165,4 +165,6 @@ helm install kafka-ui kafka-ui/kafka-ui  --namespace=kafka \
 --set envs.config.KAFKA_CLUSTERS_0_ZOOKEEPER=my-kafka-zookeeper:2181
 ```
 
-![image](https://github.com/Kim-sehee/prelab/blob/02455ed1a615c375d99ae8a0de0b74d9f9dfc149/deliverybuild.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/93ecce9f26fcce97cbcbe86b08d9bd118f127f3d/kafkasetting1.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/93ecce9f26fcce97cbcbe86b08d9bd118f127f3d/kafkasetting2.JPG)
+![image](https://github.com/Kim-sehee/prelab/blob/93ecce9f26fcce97cbcbe86b08d9bd118f127f3d/kafkasetting3.JPG)

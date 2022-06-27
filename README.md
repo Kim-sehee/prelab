@@ -61,3 +61,14 @@ $ kubectl config current-context
  aws ecr list-images --repository-name user12
  ```
 ![image](https://github.com/Kim-sehee/prelab/blob/389926d47ef750eed5660ec3a695ce616663c3bc/ecr.JPG)
+
+### PreLab 2일차 산출물 ###
+
+- **코드빌드 및 프로비저닝**
+  - 빌드를 시작하기에 앞서, 4개의 마이크로서비스 git 주소를 fork하는 작업을 수행한다.
+  -   - Microservice Code 리파지토리 (각 Github에 접속후 'fork'를 눌러 복제)
+    - [Gateway] : https://github.com/acmexii/gateway
+    - [Order] : https://github.com/acmexii/order
+    - [Delivery] : https://github.com/acmexii/delivery
+    - [Product] : https://github.com/acmexii/product
+![image](https://github.com/Kim-sehee/prelab/blob/cf47fa3ddf98742cc043557da54978ee993e7200/accesskey_setting.JPG)
